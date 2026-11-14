@@ -20,7 +20,7 @@ Todo pasa en tu PC. No se sube nada a ningún servidor y no hace falta crear una
 ## 🚀 Instalación (3 pasos)
 
 1. **Descargá** el `.zip` de la última versión desde [Releases](https://github.com/Zorginta/NowPlaying/releases/latest), descomprimilo y abrí `NowPlayingBridge.exe`.
-2. Si Windows muestra **"Windows protegió su PC"**: tocá **"Más información"** y después **"Ejecutar de todas formas"**. Aparece porque el programa no está firmado digitalmente (firmar cuesta dinero), no porque tenga algo malo. El código está abierto en este repositorio para que lo revises.
+2. Si Windows muestra **"Windows protegió su PC"**: tocá **"Más información"** y después **"Ejecutar de todas formas"**. Aparece porque el programa no está firmado digitalmente (firmar cuesta dinero), no porque tenga algo malo.
 3. Aparece un ícono verde cerca del reloj. Hacé clic derecho → **"Abrir el generador de overlays"**.
 
 > Si el navegador pregunta por acceso a la red local, tocá **"Permitir"**.
@@ -73,14 +73,6 @@ En el generador, tarjeta **"Superposición en pantalla"**: elegí posición, dis
 - El programa solo escucha en tu propia PC (`127.0.0.1`, puerto `5757`), no está abierto a internet.
 - Solo responde a la página del generador, para que otras webs no puedan ver qué escuchás.
 - El visualizer solo captura audio mientras alguien lo pide y se apaga solo a los pocos segundos.
-
----
-
-## 🛠️ Compilarlo vos mismo
-
-1. Instalá el **SDK de .NET** (no el Runtime) desde https://dotnet.microsoft.com/download
-2. Abrí `build.bat` (hace falta internet la primera vez).
-3. El programa queda en la carpeta `dist`.
 
 ---
 
