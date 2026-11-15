@@ -89,8 +89,8 @@ Algunos antivirus (por ejemplo Avast) pueden marcar el programa por error. No es
 **Si tu antivirus lo bloquea:** agregá una excepción para `NowPlayingBridge.exe` (o para su carpeta) y volvé a abrirlo. Podés avisar al antivirus que es un falso positivo desde su formulario de soporte.
 
 **Verificación (versión 1.4.3):**
-- [VirusTotal](https://www.virustotal.com/gui/file/3cc8e2daa602d39c99003cfa8b724ec69e0ab30210cc65dea7e790208f873665): **0 detecciones de 70** antivirus.
-- [Hybrid Analysis](https://hybrid-analysis.com/sample/3cc8e2daa602d39c99003cfa8b724ec69e0ab30210cc65dea7e790208f873665): "No specific threat" (0 de 100), sin detecciones de ningún antivirus.
+- [VirusTotal](https://www.virustotal.com/gui/file/3f3878a8d2b7e649e1c837bbf57133f80352f9ea44b287c85be4069582745082?nocache=1): **0 detecciones de 64** antivirus.
+- [Hybrid Analysis](https://hybrid-analysis.com/sample/3f3878a8d2b7e649e1c837bbf57133f80352f9ea44b287c85be4069582745082): "No specific threat" (0 de 100), sin detecciones de ningún antivirus.
 
 Podés escanear tu copia vos mismo en [VirusTotal](https://www.virustotal.com) y comparar: el resultado debería ser el mismo. Si el resultado es distinto, es probable que el archivo no sea el de este repositorio: descargalo solo desde [Releases](https://github.com/Zorginta/NowPlaying/releases/latest).
 
