@@ -70,9 +70,25 @@ En el generador, tarjeta **"Superposición en pantalla"**: elegí posición, dis
 
 ## 🔒 Privacidad y seguridad
 
-- El programa solo escucha en tu propia PC (`127.0.0.1`, puerto `5757`), no está abierto a internet.
+- El programa solo escucha en tu propia PC (`127.0.0.1`), no está abierto a internet. Usa el puerto `5757` y, si está ocupado, prueba solo del `5758` al `5767`.
 - Solo responde a la página del generador, para que otras webs no puedan ver qué escuchás.
 - El visualizer solo captura audio mientras alguien lo pide y se apaga solo a los pocos segundos.
+
+---
+
+## 🛡️ ¿Mi antivirus lo marca? (falso positivo)
+
+Algunos antivirus (por ejemplo Avast) pueden marcar el programa por error. No es un virus: pasa porque el programa no está firmado digitalmente y hace cosas que, vistas de forma automática, se parecen a las de un malware: abre un servidor local, lee lo que suena en Windows, captura el audio de salida si activás el visualizer, y se inicia con Windows.
+
+**Qué hace y qué no hace el programa:**
+- Solo lee el título, el artista y la carátula de lo que suena, a través de los controles de música de Windows.
+- Solo responde dentro de tu propia PC (`127.0.0.1`). No envía nada a internet ni a ningún servidor.
+- El visualizer captura el audio que sale por tus parlantes, nunca el micrófono, y solo mientras está activado en el overlay.
+- Se puede salir y desactivar el inicio con Windows desde el menú del ícono, en cualquier momento.
+
+**Si tu antivirus lo bloquea:** agregá una excepción para `NowPlayingBridge.exe` (o para su carpeta) y volvé a abrirlo. Podés avisar al antivirus que es un falso positivo desde su formulario de soporte.
+
+**Verificación:** podés escanear el archivo en [VirusTotal](https://www.virustotal.com) subiendo el `.exe` y ver qué dicen más de 70 antivirus a la vez. Es normal que uno o dos marquen un programa sin firmar.
 
 ---
 
@@ -81,7 +97,8 @@ En el generador, tarjeta **"Superposición en pantalla"**: elegí posición, dis
 | Problema | Solución |
 |---|---|
 | El generador dice "No detecto la app" | Abrí `NowPlayingBridge.exe` y permití el acceso a la red local en el navegador. |
-| El puerto 5757 está ocupado | Cerrá el otro programa que lo usa y abrí el Bridge de nuevo. |
+| El puerto 5757 está ocupado | No hace falta hacer nada: el programa usa otro puerto libre (hasta el 5767) y el generador lo encuentra solo. |
+| Mi antivirus lo marca como virus | Es un falso positivo, mirá la sección de abajo. |
 | El visualizer no muestra nada | Elegí en el generador la salida de audio por donde suena tu música. |
 | Aparece la música de un navegador que no quiero | Usá "Excluir estas apps" (por ejemplo `chrome.exe`). |
 
