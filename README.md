@@ -88,7 +88,11 @@ Algunos antivirus (por ejemplo Avast) pueden marcar el programa por error. No es
 
 **Si tu antivirus lo bloquea:** agregá una excepción para `NowPlayingBridge.exe` (o para su carpeta) y volvé a abrirlo. Podés avisar al antivirus que es un falso positivo desde su formulario de soporte.
 
-**Verificación:** podés escanear el archivo en [VirusTotal](https://www.virustotal.com) subiendo el `.exe` y ver qué dicen más de 70 antivirus a la vez. Es normal que uno o dos marquen un programa sin firmar.
+**Verificación (versión 1.4.3):**
+- [VirusTotal](https://www.virustotal.com/gui/file/3cc8e2daa602d39c99003cfa8b724ec69e0ab30210cc65dea7e790208f873665): **0 detecciones de 70** antivirus.
+- [Hybrid Analysis](https://hybrid-analysis.com/sample/3cc8e2daa602d39c99003cfa8b724ec69e0ab30210cc65dea7e790208f873665): "No specific threat" (0 de 100), sin detecciones de ningún antivirus.
+
+Podés escanear tu copia vos mismo en [VirusTotal](https://www.virustotal.com) y comparar: el resultado debería ser el mismo. Si el resultado es distinto, es probable que el archivo no sea el de este repositorio: descargalo solo desde [Releases](https://github.com/Zorginta/NowPlaying/releases/latest).
 
 ---
 
@@ -98,7 +102,7 @@ Algunos antivirus (por ejemplo Avast) pueden marcar el programa por error. No es
 |---|---|
 | El generador dice "No detecto la app" | Abrí `NowPlayingBridge.exe` y permití el acceso a la red local en el navegador. |
 | El puerto 5757 está ocupado | No hace falta hacer nada: el programa usa otro puerto libre (hasta el 5767) y el generador lo encuentra solo. |
-| Mi antivirus lo marca como virus | Es un falso positivo, mirá la sección de abajo. |
+| Mi antivirus lo marca como virus | Es un falso positivo, mirá la sección de antivirus más arriba. |
 | El visualizer no muestra nada | Elegí en el generador la salida de audio por donde suena tu música. |
 | Aparece la música de un navegador que no quiero | Usá "Excluir estas apps" (por ejemplo `chrome.exe`). |
 
