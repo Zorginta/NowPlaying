@@ -53,7 +53,7 @@ El overlay se muestra solo cuando hay música sonando.
 
 ## 🖥️ Superposición en pantalla (sin OBS)
 
-En el generador, tarjeta **"Superposición en pantalla"**: elegí posición, distancia a los bordes, tamaño y si querés que aparezca solo al cambiar de canción. Después tocá **"Mostrar superposición"**. También se enciende y apaga desde el menú del ícono.
+En el generador, pestaña **"En pantalla"**: elegí posición, distancia a los bordes, tamaño y si querés que aparezca solo al cambiar de canción. Después tocá **"Mostrar superposición"**. También se enciende y apaga desde el menú del ícono.
 
 - Necesita **WebView2 Runtime** de Microsoft (viene con Windows 11 y con Edge en Windows 10).
 - No se ve sobre juegos en **pantalla completa exclusiva**. Usá modo ventana o ventana sin bordes.
@@ -88,9 +88,9 @@ Algunos antivirus (por ejemplo Avast) pueden marcar el programa por error. No es
 
 **Si tu antivirus lo bloquea:** agregá una excepción para `NowPlayingBridge.exe` (o para su carpeta) y volvé a abrirlo. Podés avisar al antivirus que es un falso positivo desde su formulario de soporte.
 
-**Verificación (versión 1.4.3):**
-- [VirusTotal](https://www.virustotal.com/gui/file/3cc8e2daa602d39c99003cfa8b724ec69e0ab30210cc65dea7e790208f873665): **0 detecciones de 70** antivirus.
-- [Hybrid Analysis](https://hybrid-analysis.com/sample/3cc8e2daa602d39c99003cfa8b724ec69e0ab30210cc65dea7e790208f873665): "No specific threat" (0 de 100), sin detecciones de ningún antivirus.
+**Verificación (versión 1.4.7):**
+- [VirusTotal](https://www.virustotal.com/gui/file/5db5e3fa050d17210dee45658ee95d237242dd6acb40584b2ec21d1a953f4c85): **0 detecciones de 70** antivirus.
+- [Hybrid Analysis](https://hybrid-analysis.com/sample/5db5e3fa050d17210dee45658ee95d237242dd6acb40584b2ec21d1a953f4c85): "No specific threat" (0 de 100), sin detecciones de ningún antivirus.
 
 Podés escanear tu copia vos mismo en [VirusTotal](https://www.virustotal.com) y comparar: el resultado debería ser el mismo. Si el resultado es distinto, es probable que el archivo no sea el de este repositorio: descargalo solo desde [Releases](https://github.com/Zorginta/NowPlaying/releases/latest).
 
